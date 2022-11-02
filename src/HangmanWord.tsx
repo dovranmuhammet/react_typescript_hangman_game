@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HangmanWord = () => {
-  return <div></div>
+  return <div>HangmanWord</div>
 }
 
 export default HangmanWord
