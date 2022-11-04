@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import HangmanDrawing from './HangmanDrawing'
+import { HangmanDrawing } from './HangmanDrawing'
 import HangmanWord from './HangmanWord'
 import Keyboard from './Keyboard'
 
