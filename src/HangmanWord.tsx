@@ -1,5 +1,6 @@
 export function HangmanWord() {
   const word = 'test'
+  const guessedLetters = ['t', 'e', 'g']
 
   return (
     <div
@@ -13,8 +14,16 @@ export function HangmanWord() {
       }}
     >
       {word.split('').map((letter, index) => (
-        <span style={{ borderBottom: '.1em soliid black' }}>
-          <span style={{ visibility: 'hidden' }}>{letter}</span>
+        <span style={{ borderBottom: '.1em soliid black' }} key={index}>
+          <span
+            style={{
+              visibility: guessedLetters.includes(letter)
+                ? 'visible'
+                : 'hidden',
+            }}
+          >
+            {letter}
+          </span>
         </span>
       ))}
     </div>
